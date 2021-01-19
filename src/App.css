@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
+body {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+#root{
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.App-header{
+  position: fixed;
+  z-index: 10;
+  background-color: #282c34cc;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px; 
+  border-radius: 5px;
+  top: 20px;
+
+}
+.App-header .logo{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.App-header a, .App-header .links{
+  color: white;
+  font-size: 11px;
+}
+
+.controls {
+  align-items: flex-end;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-radius: 5px;
+  flex-direction: column;  
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.row{
+  align-items: flex-start;
+  flex-direction: row;  
+  display: flex;
+  padding-bottom: 5px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column{
+  flex-direction: column;  
+  display: flex;
+  flex: 1;
+}
+.controls .row button.collapse{
+
+  border-top-left-radius:0px;
+  border-bottom-left-radius:0px;
+}
+.controls .row input[type="text"].collapse{
+  border-top-right-radius:0px;
+  border-bottom-right-radius:0px;
+}
+.controls .picker{
+  font-size: 14px;;
+  width: 100%;
+  flex:1;
+}
+.label{
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+input[type="text"] {
+
+  border-radius: 5px;
+  appearance:none;
+  -webkit-appearance:none;
+  padding: 10px;
+  border:none;
+  display: flex;
+}
+input[type=text]:focus, button {
+  outline: none;
+}
+
+button {
+  appearance:none;
+  -webkit-appearance:none;
+  padding:10px;
+  border:none;
+  background-color:#3F51B5;
+  color:#fff;
+  font-weight:600;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:#3F51B5bb;
+}
+button:disabled{
+  background-color:#3F51B5bb;
+  color: grey;
 }

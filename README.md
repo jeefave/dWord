@@ -1,10 +1,19 @@
-# Getting Started with Create React App
+# Hackathon Jan. 2021
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `Context`
 
-## Available Scripts
+This application aims to showcase a simple integration of Handshake and Skynet
 
-In the project directory, you can run:
+[namebase.io](https://www.namebase.io/) is managing the DNS records on Hanshake and provides the portal to skynet content.
+
+[siasky.net](https://siasky.net/) is providing the portal to Sia network.
+
+## `Start hacking`
+
+To see this app in action:
+
+- [dword.johnxu](http://dword.johnxu/)
+- [dword.johnxu.hns.to](http://dword.johnxu.hns.to/)
 
 ### `yarn start`
 
