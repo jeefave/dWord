@@ -2,18 +2,23 @@
 
 ## `Context`
 
-This application aims to showcase a simple integration of Handshake and Skynet
+This application aims to showcase a simple integration of Handshake and Skynet.
+
+You can use dword to build simple static sites and instantly deploy them on Handshake.
 
 [namebase.io](https://www.namebase.io/) is managing the DNS records on Hanshake and provides the portal to skynet content.
 
 [siasky.net](https://siasky.net/) is providing the portal to Sia network.
 
-## `Start hacking`
-
 To see this app in action:
 
 - [dword.johnxu](http://dword.johnxu/)
 - [dword.johnxu.hns.to](http://dword.johnxu.hns.to/)
+
+You can learn more here: https://learn.namebase.io/
+
+
+## `Start hacking`
 
 ### `yarn start`
 
